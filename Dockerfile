@@ -20,6 +20,6 @@ RUN curl -fSL "http://download.nomachine.com/download/5.1/Linux/nomachine_${NOMA
 && echo 'nomachine:nomachine' | chpasswd
 
 
-ADD nxserver.sh /
+COPY nxserver.sh /
 
 ENTRYPOINT ["/nxserver.sh"]
