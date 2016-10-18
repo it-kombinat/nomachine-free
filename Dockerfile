@@ -2,11 +2,7 @@ FROM debian:jessie
 
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV http_proxy http://newproxy10.nmc-m.dtag.de:8080
-ENV https_proxy https://newproxy10.nmc-m.dtag.de:8080
-
 RUN apt-get update 
-
 
 RUN apt-get update && apt-get install -y vim xterm pulseaudio cups curl
 ENV NOMACHINE_VERSION 5.1.54
